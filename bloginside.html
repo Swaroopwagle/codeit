@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Computer Institute in Nepal - Code IT | Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#DD4A29',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blog-card:hover .blog-title {
+            color: #DD4A29;
+        }
+
+        .read-more:hover {
+            transform: translateX(5px);
+        }
+
+        .swiper {
+            width: 100%;
+            padding-bottom: 30px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #DD4A29 !important;
+        }
+
+        @media (min-width: 768px) {
+            .swiper-container {
+                display: none;
+            }
+
+            .grid-container {
+                display: grid;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .swiper-container {
+                display: block;
+            }
+
+            .grid-container {
+                display: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body class="font-sans bg-gray-50">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold text-indigo-600">Code IT</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#" class="text-gray-700 hover:text-indigo-600">Home</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600">Courses</a>
-                    <a href="#" class="text-indigo-600 font-medium">Blog</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600">About</a>
-                    <a href="#" class="text-gray-700 hover:text-indigo-600">Contact</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button class="text-gray-700">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+
 
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -38,175 +70,85 @@
             <div class="lg:w-2/3">
                 <!-- Breadcrumb -->
                 <div class="text-sm text-gray-500 mb-6">
-                    <a href="#" class="hover:text-indigo-600">Home</a> / 
-                    <a href="#" class="hover:text-indigo-600">Blog</a> / 
+                    <a href="#" class="hover:text-primary">Home</a> /
+                    <a href="#" class="hover:text-primary">Blog</a> /
                     <span class="text-gray-700">Best Computer Institute in Nepal</span>
                 </div>
 
                 <!-- Blog Header -->
                 <div class="mb-8">
-                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Best Computer Institute in Nepal - Code IT</h1>
+                    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Best Computer Institute in Nepal -
+                        Code IT</h1>
                     <div class="flex items-center text-sm text-gray-500">
                         <span class="mr-4"><i class="far fa-calendar-alt mr-1"></i> June 15, 2023</span>
                         <span class="mr-4"><i class="far fa-clock mr-1"></i> 5 min read</span>
-                        <span><i class="far fa-eye mr-1"></i> 1.2K views</span>
+
                     </div>
                 </div>
 
                 <!-- Featured Image -->
                 <div class="mb-8 rounded-lg overflow-hidden">
-                    <img src="https://codeit.com.np/wp-content/uploads/2023/06/computer-institute-in-nepal.jpg" alt="Computer Institute in Nepal" class="w-full h-auto object-cover">
+                    <img src="https://codeit.com.np/storage/01K0E7B9S9180XVRCND5EYZX55.avif"
+                        alt="Computer Institute in Nepal" class="w-full h-auto object-cover">
                 </div>
 
                 <!-- Blog Content -->
                 <article class="prose max-w-none mb-12">
-                    <p class="text-lg text-gray-700 mb-6">In today's digital age, computer education has become essential for career growth and professional development. Nepal has seen a surge in demand for quality computer education, and several institutes have emerged to meet this need. Among them, Code IT has established itself as one of the best computer institutes in Nepal, offering comprehensive courses and excellent training facilities.</p>
+                    <p class="text-lg text-gray-700 mb-6">In today's digital age, computer education has become
+                        essential for career growth and professional development. Nepal has seen a surge in demand for
+                        quality computer education, and several institutes have emerged to meet this need. Among them,
+                        Code IT has established itself as one of the best computer institutes in Nepal, offering
+                        comprehensive courses and excellent training facilities.</p>
 
-                    <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Why Choose Code IT?</h2>
-                    
-                    <p>Code IT stands out from other computer institutes in Nepal for several reasons:</p>
-                    
-                    <ul class="list-disc pl-6 mb-6">
-                        <li class="mb-2"><strong>Industry-Expert Trainers:</strong> Our instructors are professionals with years of experience in their respective fields.</li>
-                        <li class="mb-2"><strong>Practical Oriented Training:</strong> We focus on hands-on learning with real-world projects.</li>
-                        <li class="mb-2"><strong>Updated Curriculum:</strong> Our courses are regularly updated to match industry standards.</li>
-                        <li class="mb-2"><strong>Affordable Fees:</strong> We provide quality education at competitive prices.</li>
-                        <li class="mb-2"><strong>Job Placement Support:</strong> We assist our students in finding suitable employment opportunities.</li>
-                    </ul>
+
 
                     <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Popular Courses at Code IT</h2>
-                    
+
                     <p>Code IT offers a wide range of courses designed to meet the needs of different learners:</p>
-                    
+
                     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">1. Full Stack Web Development</h3>
-                    <p>Our comprehensive web development course covers both front-end and back-end technologies including HTML, CSS, JavaScript, React, Node.js, and databases.</p>
-                    
+                    <p>Our comprehensive web development course covers both front-end and back-end technologies
+                        including HTML, CSS, JavaScript, React, Node.js, and databases.</p>
+
                     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">2. Mobile App Development</h3>
                     <p>Learn to build cross-platform mobile applications using Flutter and React Native frameworks.</p>
-                    
+
                     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">3. UI/UX Design</h3>
-                    <p>Master the principles of user interface and user experience design with industry-standard tools like Figma and Adobe XD.</p>
-                    
+                    <p>Master the principles of user interface and user experience design with industry-standard tools
+                        like Figma and Adobe XD.</p>
+
                     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">4. Digital Marketing</h3>
-                    <p>Gain expertise in SEO, social media marketing, content marketing, and other digital marketing strategies.</p>
-                    
-                    <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Our Training Methodology</h2>
-                    
-                    <p>At Code IT, we believe in learning by doing. Our training methodology includes:</p>
-                    
-                    <ul class="list-disc pl-6 mb-6">
-                        <li class="mb-2">Interactive classroom sessions with practical demonstrations</li>
-                        <li class="mb-2">Regular assignments and projects</li>
-                        <li class="mb-2">One-on-one doubt clearing sessions</li>
-                        <li class="mb-2">Mock interviews and resume building workshops</li>
-                        <li class="mb-2">Internship opportunities for deserving students</li>
-                    </ul>
-                    
+                    <p>Gain expertise in SEO, social media marketing, content marketing, and other digital marketing
+                        strategies.</p>
+
+
+
                     <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Success Stories</h2>
-                    
-                    <p>Our students have gone on to work at reputed companies both in Nepal and abroad. Many have started their own successful tech businesses. The skills they acquired at Code IT have helped them achieve their career goals.</p>
-                    
-                    <blockquote class="border-l-4 border-indigo-500 pl-4 italic my-6">
-                        "The practical approach to learning at Code IT helped me secure a job as a front-end developer within a month of completing my course. The trainers were supportive and the curriculum was exactly what the industry needed."
+
+                    <p>Our students have gone on to work at reputed companies both in Nepal and abroad. Many have
+                        started their own successful tech businesses. The skills they acquired at Code IT have helped
+                        them achieve their career goals.</p>
+
+                    <blockquote class="border-l-4 border-primary pl-4 italic my-6">
+                        "The practical approach to learning at Code IT helped me secure a job as a front-end developer
+                        within a month of completing my course. The trainers were supportive and the curriculum was
+                        exactly what the industry needed."
                         <footer class="mt-2 font-semibold">- Ramesh Shrestha, Web Developer</footer>
                     </blockquote>
-                    
+
                     <h2 class="text-2xl font-bold text-gray-800 mt-8 mb-4">Conclusion</h2>
-                    
-                    <p>If you're looking for the best computer institute in Nepal that provides quality education, practical training, and career support, Code IT should be your top choice. With our experienced trainers, updated curriculum, and student-centric approach, we are committed to helping you build a successful career in the tech industry.</p>
-                    
+
+                    <p>If you're looking for the best computer institute in Nepal that provides quality education,
+                        practical training, and career support, Code IT should be your top choice. With our experienced
+                        trainers, updated curriculum, and student-centric approach, we are committed to helping you
+                        build a successful career in the tech industry.</p>
+
                     <p>Visit our website or contact us today to learn more about our courses and enrollment process.</p>
                 </article>
 
-                <!-- Tags -->
-                <div class="mb-8">
-                    <div class="flex flex-wrap gap-2">
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">computer institute</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">Nepal</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">IT courses</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">coding</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">programming</a>
-                    </div>
-                </div>
 
-                <!-- Author Bio -->
-                <div class="bg-gray-50 p-6 rounded-lg mb-8">
-                    <div class="flex items-center">
-                        <img src="https://codeit.com.np/wp-content/uploads/2023/06/author-profile.jpg" alt="Author" class="w-16 h-16 rounded-full mr-4">
-                        <div>
-                            <h3 class="font-bold text-gray-900">Sujan Shrestha</h3>
-                            <p class="text-gray-600 text-sm">Content Writer & Digital Marketing Expert</p>
-                            <p class="text-gray-700 mt-2">Sujan has been writing about technology and education for over 5 years. He specializes in creating content that helps students make informed decisions about their education and career paths.</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Comments Section -->
-                <div class="mb-12">
-                    <h3 class="text-xl font-bold text-gray-900 mb-6">Comments (3)</h3>
-                    
-                    <div class="space-y-6">
-                        <!-- Comment 1 -->
-                        <div class="flex">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="User" class="w-10 h-10 rounded-full mr-4">
-                            <div class="flex-1">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <div class="flex justify-between items-center mb-2">
-                                        <h4 class="font-bold text-gray-900">Anita Gurung</h4>
-                                        <span class="text-sm text-gray-500">2 days ago</span>
-                                    </div>
-                                    <p class="text-gray-700">I completed the web development course last month and already got a job as a junior developer. Thanks Code IT!</p>
-                                    <button class="text-sm text-indigo-600 mt-2 hover:text-indigo-800">Reply</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Comment 2 -->
-                        <div class="flex">
-                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User" class="w-10 h-10 rounded-full mr-4">
-                            <div class="flex-1">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <div class="flex justify-between items-center mb-2">
-                                        <h4 class="font-bold text-gray-900">Rajesh Kumar</h4>
-                                        <span class="text-sm text-gray-500">1 week ago</span>
-                                    </div>
-                                    <p class="text-gray-700">Does Code IT provide any scholarship programs for deserving students?</p>
-                                    <button class="text-sm text-indigo-600 mt-2 hover:text-indigo-800">Reply</button>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Comment 3 -->
-                        <div class="flex">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="User" class="w-10 h-10 rounded-full mr-4">
-                            <div class="flex-1">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <div class="flex justify-between items-center mb-2">
-                                        <h4 class="font-bold text-gray-900">Priya Sharma</h4>
-                                        <span class="text-sm text-gray-500">2 weeks ago</span>
-                                    </div>
-                                    <p class="text-gray-700">I'm interested in the UI/UX course. Can someone share their experience about this particular course?</p>
-                                    <button class="text-sm text-indigo-600 mt-2 hover:text-indigo-800">Reply</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Comment Form -->
-                    <div class="mt-8">
-                        <h3 class="text-xl font-bold text-gray-900 mb-4">Leave a Comment</h3>
-                        <form>
-                            <div class="mb-4">
-                                <textarea rows="4" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Your comment"></textarea>
-                            </div>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                                <input type="text" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Name">
-                                <input type="email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Email">
-                            </div>
-                            <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Post Comment</button>
-                        </form>
-                    </div>
-                </div>
+
             </div>
 
             <!-- Sidebar -->
@@ -215,8 +157,9 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Search</h3>
                     <div class="relative">
-                        <input type="text" placeholder="Search blogs..." class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                        <button class="absolute right-3 top-2 text-gray-500 hover:text-indigo-600">
+                        <input type="text" placeholder="Search blogs..."
+                            class="w-full pl-4 pr-10 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary">
+                        <button class="absolute right-3 top-2 text-gray-500 hover:text-primary">
                             <i class="fas fa-search"></i>
                         </button>
                     </div>
@@ -226,38 +169,45 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Recent Posts</h3>
                     <div class="space-y-4">
-                        <a href="#" class="block hover:text-indigo-600">
+                        <a href="#" class="block hover:text-primary">
                             <div class="flex items-start">
-                                <img src="https://codeit.com.np/wp-content/uploads/2023/05/web-development-trends.jpg" alt="Web Development Trends" class="w-16 h-16 object-cover rounded mr-3">
+                                <img src="https://codeit.com.np/storage/01K0E7B9S9180XVRCND5EYZX55.avif"
+                                    alt="Web Development Trends" class="w-16 h-16 object-cover rounded mr-3">
                                 <div>
                                     <h4 class="font-medium text-gray-900">Top Web Development Trends in 2023</h4>
                                     <p class="text-sm text-gray-500">May 28, 2023 • 4 min read</p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="block hover:text-indigo-600">
+                        <a href="#" class="block hover:text-primary">
                             <div class="flex items-start">
-                                <img src="https://codeit.com.np/wp-content/uploads/2023/04/career-in-digital-marketing.jpg" alt="Digital Marketing Career" class="w-16 h-16 object-cover rounded mr-3">
+                                <img src="https://codeit.com.np/storage/01K0E7B9S9180XVRCND5EYZX55.avif"
+                                    alt="Digital Marketing Career" class="w-16 h-16 object-cover rounded mr-3">
                                 <div>
-                                    <h4 class="font-medium text-gray-900">How to Start a Career in Digital Marketing</h4>
+                                    <h4 class="font-medium text-gray-900">How to Start a Career in Digital Marketing
+                                    </h4>
                                     <p class="text-sm text-gray-500">April 15, 2023 • 6 min read</p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="block hover:text-indigo-600">
+                        <a href="#" class="block hover:text-primary">
                             <div class="flex items-start">
-                                <img src="https://codeit.com.np/wp-content/uploads/2023/03/python-vs-javascript.jpg" alt="Python vs JavaScript" class="w-16 h-16 object-cover rounded mr-3">
+                                <img src="https://codeit.com.np/storage/01K0E7B9S9180XVRCND5EYZX55.avif"
+                                    alt="Python vs JavaScript" class="w-16 h-16 object-cover rounded mr-3">
                                 <div>
-                                    <h4 class="font-medium text-gray-900">Python vs JavaScript: Which to Learn First?</h4>
+                                    <h4 class="font-medium text-gray-900">Python vs JavaScript: Which to Learn First?
+                                    </h4>
                                     <p class="text-sm text-gray-500">March 22, 2023 • 7 min read</p>
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="block hover:text-indigo-600">
+                        <a href="#" class="block hover:text-primary">
                             <div class="flex items-start">
-                                <img src="https://codeit.com.np/wp-content/uploads/2023/02/freelancing-tips.jpg" alt="Freelancing Tips" class="w-16 h-16 object-cover rounded mr-3">
+                                <img src="https://codeit.com.np/storage/01K0E7B9S9180XVRCND5EYZX55.avif"
+                                    alt="Freelancing Tips" class="w-16 h-16 object-cover rounded mr-3">
                                 <div>
-                                    <h4 class="font-medium text-gray-900">10 Essential Tips for Freelance Developers</h4>
+                                    <h4 class="font-medium text-gray-900">10 Essential Tips for Freelance Developers
+                                    </h4>
                                     <p class="text-sm text-gray-500">February 10, 2023 • 8 min read</p>
                                 </div>
                             </div>
@@ -269,32 +219,92 @@
                 <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Categories</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-700 hover:text-indigo-600 flex justify-between"><span>Web Development</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">12</span></a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-indigo-600 flex justify-between"><span>Mobile App Development</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">8</span></a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-indigo-600 flex justify-between"><span>UI/UX Design</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">5</span></a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-indigo-600 flex justify-between"><span>Digital Marketing</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">7</span></a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-indigo-600 flex justify-between"><span>Career Guidance</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">9</span></a></li>
-                        <li><a href="#" class="text-gray-700 hover:text-indigo-600 flex justify-between"><span>Technology Trends</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">6</span></a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-primary flex justify-between"><span>Web
+                                    Development</span> <span
+                                    class="bg-gray-100 px-2 py-1 text-xs rounded-full">12</span></a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-primary flex justify-between"><span>Mobile App
+                                    Development</span> <span
+                                    class="bg-gray-100 px-2 py-1 text-xs rounded-full">8</span></a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-primary flex justify-between"><span>UI/UX
+                                    Design</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">5</span></a>
+                        </li>
+                        <li><a href="#" class="text-gray-700 hover:text-primary flex justify-between"><span>Digital
+                                    Marketing</span> <span
+                                    class="bg-gray-100 px-2 py-1 text-xs rounded-full">7</span></a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-primary flex justify-between"><span>Career
+                                    Guidance</span> <span
+                                    class="bg-gray-100 px-2 py-1 text-xs rounded-full">9</span></a></li>
+                        <li><a href="#" class="text-gray-700 hover:text-primary flex justify-between"><span>Technology
+                                    Trends</span> <span class="bg-gray-100 px-2 py-1 text-xs rounded-full">6</span></a>
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Popular Tags -->
-                <div class="bg-white p-6 rounded-lg shadow-sm">
+                <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
                     <h3 class="text-lg font-bold text-gray-900 mb-4">Popular Tags</h3>
                     <div class="flex flex-wrap gap-2">
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">programming</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">web design</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">javascript</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">python</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">react</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">flutter</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">career</a>
-                        <a href="#" class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-indigo-100 hover:text-indigo-700">Nepal</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">programming</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">web
+                            design</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">javascript</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">python</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">react</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">flutter</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">career</a>
+                        <a href="#"
+                            class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm hover:bg-primary hover:text-white">Nepal</a>
                     </div>
                 </div>
+                <!-- upcoming event cards -->
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
+                    <h3 class="font-bold text-primary mb-4">Featured Courses</h3>
+
+                    <!-- Course 1 -->
+                    <div class="mb-4 pb-4 border-b border-gray-100">
+                        <h4 class="font-semibold text-gray-900">Full Stack Development</h4>
+                        <p class="text-sm text-gray-600 mt-1">Master HTML, CSS, JavaScript + MERN stack</p>
+                        <div class="flex items-center mt-2 text-xs text-gray-500">
+                            <i class="far fa-clock mr-1"></i> 3 Months | <i class="fas fa-certificate ml-2 mr-1"></i>
+                            Certificate
+                        </div>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="mb-4 pb-4 border-b border-gray-100">
+                        <h4 class="font-semibold text-gray-900">UI/UX Design</h4>
+                        <p class="text-sm text-gray-600 mt-1">Figma, Adobe XD + Design Thinking</p>
+                        <div class="flex items-center mt-2 text-xs text-gray-500">
+                            <i class="far fa-clock mr-1"></i> 2 Months | <i class="fas fa-certificate ml-2 mr-1"></i>
+                            Portfolio
+                        </div>
+                    </div>
+
+                    <a href="#" class="mt-3 block text-primary text-sm font-medium hover:underline">
+                        View All Courses →
+                    </a>
+                </div>
             </div>
+
+
         </div>
+
+
+
     </div>
+    
+
+
+
+
 
     <!-- Related Posts -->
     <div class="bg-gray-100 py-12">
@@ -302,13 +312,16 @@
             <h2 class="text-2xl font-bold text-gray-900 mb-8">Related Posts</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Post 1 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div
+                    class="bg-white hidden md:block rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <a href="#">
-                        <img src="https://codeit.com.np/wp-content/uploads/2023/05/it-courses-nepal.jpg" alt="IT Courses in Nepal" class="w-full h-48 object-cover">
+                        <img src="https://codeit.com.np/wp-content/uploads/2023/05/it-courses-nepal.jpg"
+                            alt="IT Courses in Nepal" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <span class="text-sm text-indigo-600 font-medium">Education</span>
+                            <span class="text-sm text-primary font-medium">Education</span>
                             <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">Best IT Courses to Study in Nepal</h3>
-                            <p class="text-gray-600 mb-4">Discover the most in-demand IT courses that can help you build a successful career in Nepal's growing tech industry.</p>
+                            <p class="text-gray-600 mb-4">Discover the most in-demand IT courses that can help you build
+                                a successful career in Nepal's growing tech industry.</p>
                             <div class="flex items-center text-sm text-gray-500">
                                 <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> May 5, 2023</span>
                                 <span><i class="far fa-clock mr-1"></i> 6 min read</span>
@@ -316,15 +329,19 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Post 2 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div
+                    class="bg-white hidden md:block rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <a href="#">
-                        <img src="https://codeit.com.np/wp-content/uploads/2023/04/learn-programming.jpg" alt="Learn Programming" class="w-full h-48 object-cover">
+                        <img src="https://codeit.com.np/wp-content/uploads/2023/04/learn-programming.jpg"
+                            alt="Learn Programming" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <span class="text-sm text-indigo-600 font-medium">Programming</span>
-                            <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">How to Learn Programming Effectively</h3>
-                            <p class="text-gray-600 mb-4">Practical tips and strategies to learn programming faster and become a proficient developer in less time.</p>
+                            <span class="text-sm text-primary font-medium">Programming</span>
+                            <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">How to Learn Programming Effectively
+                            </h3>
+                            <p class="text-gray-600 mb-4">Practical tips and strategies to learn programming faster and
+                                become a proficient developer in less time.</p>
                             <div class="flex items-center text-sm text-gray-500">
                                 <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> April 18, 2023</span>
                                 <span><i class="far fa-clock mr-1"></i> 8 min read</span>
@@ -332,15 +349,18 @@
                         </div>
                     </a>
                 </div>
-                
+
                 <!-- Post 3 -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                <div
+                    class="bg-white hidden lg:block rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
                     <a href="#">
-                        <img src="https://codeit.com.np/wp-content/uploads/2023/03/tech-jobs-nepal.jpg" alt="Tech Jobs in Nepal" class="w-full h-48 object-cover">
+                        <img src="https://codeit.com.np/wp-content/uploads/2023/03/tech-jobs-nepal.jpg"
+                            alt="Tech Jobs in Nepal" class="w-full h-48 object-cover">
                         <div class="p-6">
-                            <span class="text-sm text-indigo-600 font-medium">Career</span>
+                            <span class="text-sm text-primary font-medium">Career</span>
                             <h3 class="text-xl font-bold text-gray-900 mt-2 mb-3">Highest Paying Tech Jobs in Nepal</h3>
-                            <p class="text-gray-600 mb-4">Explore the most lucrative technology careers in Nepal and what skills you need to land these high-paying jobs.</p>
+                            <p class="text-gray-600 mb-4">Explore the most lucrative technology careers in Nepal and
+                                what skills you need to land these high-paying jobs.</p>
                             <div class="flex items-center text-sm text-gray-500">
                                 <span class="mr-3"><i class="far fa-calendar-alt mr-1"></i> March 30, 2023</span>
                                 <span><i class="far fa-clock mr-1"></i> 7 min read</span>
@@ -349,76 +369,132 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <!-- Newsletter -->
-    <div class="bg-indigo-700 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="md:flex md:items-center md:justify-between">
-                <div class="md:w-1/2 mb-6 md:mb-0">
-                    <h2 class="text-2xl font-bold text-white mb-2">Subscribe to Our Newsletter</h2>
-                    <p class="text-indigo-200">Get the latest blog posts, course updates, and tech news delivered to your inbox.</p>
-                </div>
-                <div class="md:w-1/2">
-                    <form class="flex">
-                        <input type="email" placeholder="Your email address" class="flex-1 px-4 py-3 rounded-l-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
-                        <button type="submit" class="bg-indigo-900 text-white px-6 py-3 rounded-r-md hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Subscribe</button>
-                    </form>
-                    <p class="text-indigo-200 text-sm mt-2">We respect your privacy. Unsubscribe at any time.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Code IT</h3>
-                    <p class="text-gray-400">Providing quality IT education and training to help students build successful careers in technology.</p>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Courses</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Courses</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white">Web Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Mobile App Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">UI/UX Design</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Digital Marketing</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white">Graphic Design</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-                    <ul class="space-y-2 text-gray-400">
-                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Putalisadak, Kathmandu, Nepal</li>
-                        <li class="flex items-center"><i class="fas fa-phone-alt mr-2"></i> +977-9841234567</li>
-                        <li class="flex items-center"><i class="fas fa-envelope mr-2"></i> info@codeit.com.np</li>
-                    </ul>
-                    <div class="flex space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+            <div class="swiper-container mt-8">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 mx-4 blog-card">
+                                <div class="h-48 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                        alt="Computer Institute" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center mb-2">
+                                        <span
+                                            class="text-xs font-semibold px-2 py-1 bg-primary/10 text-primary rounded">INSTITUTE</span>
+                                        <span class="text-xs text-gray-500 ml-2">📍 18-Jul-2025</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-dark mb-3 blog-title transition-colors duration-300">Best
+                                        Computer Institute in Nepal – Code IT</h3>
+                                    <p class="text-gray-600 mb-4 line-clamp-2">
+                                        Introduction: Why Choosing the Right Institute Matters. We live in a digital world where
+                                        tech skills are no longer options...
+                                    </p>
+                                    <a href="#"
+                                        class="flex items-center text-primary font-medium read-more transition-transform duration-300">
+                                        Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 mx-4 blog-card">
+                                <div class="h-48 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                        alt="Web Design Course" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center mb-2">
+                                        <span
+                                            class="text-xs font-semibold px-2 py-1 bg-primary/10 text-primary rounded">COURSE</span>
+                                        <span class="text-xs text-gray-500 ml-2">📍 11-Jul-2025</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-dark mb-3 blog-title transition-colors duration-300">
+                                        Unbeatable Web Design Course from Industry Pro</h3>
+                                    <p class="text-gray-600 mb-4 line-clamp-2">
+                                        What's This Course All About? If you've ever thought, "I want to build websites, but
+                                        where do I even start?" — you're...
+                                    </p>
+                                    <a href="#"
+                                        class="flex items-center text-primary font-medium read-more transition-transform duration-300">
+                                        Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 mx-4 blog-card">
+                                <div class="h-48 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                                        alt="IT Bootcamp" class="w-full h-full object-cover">
+                                </div>
+                                <div class="p-6">
+                                    <div class="flex items-center mb-2">
+                                        <span
+                                            class="text-xs font-semibold px-2 py-1 bg-primary/10 text-primary rounded">TRENDS</span>
+                                        <span class="text-xs text-gray-500 ml-2">📍 07-Jul-2025</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold text-dark mb-3 blog-title transition-colors duration-300">The
+                                        Growth of IT Bootcamp After 2017 in Koshi Province</h3>
+                                    <p class="text-gray-600 mb-4 line-clamp-2">
+                                        Introduction to IT Bootcamps in Nepal. In recent years, IT bootcamps have rapidly
+                                        transformed the educational landscape...
+                                    </p>
+                                    <a href="#"
+                                        class="flex items-center text-primary font-medium read-more transition-transform duration-300">
+                                        Read More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-pagination "></div>
                 </div>
             </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-                <p>&copy; 2023 Code IT. All rights reserved.</p>
-            </div>
+
         </div>
-    </footer>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 1,
+                    },
+                }
+            });
+        });
+    </script>
+
+
 </body>
+
 </html>
